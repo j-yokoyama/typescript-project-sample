@@ -1,4 +1,8 @@
 FROM centos:7
 
-RUN yum install -y epel-release
-RUN yum install -y sloccount
+RUN curl --silent --location https://rpm.nodesource.com/setup_8.x | bash -
+RUN yum install -y \
+  libxslt \
+  nodejs \
+  perl
+RUN npm install -g cloc
