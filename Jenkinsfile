@@ -5,6 +5,9 @@ pipeline {
             dir '.'
         }
     }
+    environment {
+        HOME = "${WORKSPACE}"
+    }
     
     stages {
         stage('TypeScript Counter') {
