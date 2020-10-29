@@ -7,8 +7,6 @@ pipeline {
     }
     
     stages {
-        stage('Prepare') {
-
         stage('TypeScript Counter') {
             steps {
                 //sh '''
